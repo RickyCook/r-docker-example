@@ -1,0 +1,9 @@
+version: '3'
+services:
+  r:
+    build:
+      context: .
+    volumes:
+      - ./src:/project/src
+      - ./renv.lock:/project/renv.lock
+      # - /root/.local/share/renv
